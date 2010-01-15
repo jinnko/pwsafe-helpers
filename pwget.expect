@@ -1,0 +1,11 @@
+#!/usr/bin/expect
+
+set timeout 5
+set password [lindex $argv 0]
+set entry [lindex $argv 1]
+
+spawn -noecho pwsafe -qEp $entry
+
+expect "Enter passphrase for /Users/jinn/.pwsafe.dat:"
+send "$password\n"
+interact

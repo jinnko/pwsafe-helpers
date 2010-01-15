@@ -1,0 +1,13 @@
+A few scripts to facilitate pwsafe usage on OSX.
+
+The idea is to have a few shortcut scripts taht retrieve the pwsafe password from 
+the Mac Keychain, then using expect we can call pwsafe.
+
+Current scripts are:
+	pwlist
+	pwget
+	pwadd
+
+All other operations on pwsafe need to be done as usual.
+
+Requires expect and pwsafe to be installed.
